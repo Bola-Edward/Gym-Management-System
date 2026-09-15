@@ -68,7 +68,7 @@ After login, merge the guest basket with `POST /api/basket/merge`.
 | Area | Examples |
 |------|----------|
 | Auth | `/api/auth/register`, `confirm-email`, `login`, `refresh`, `logout` |
-| Users | `/api/users/me`, `/api/v1/users/me/addresses` |
+| Users | `/api/users/me`, `/api/users/me/addresses` |
 | Catalog | products, brands, types |
 | Basket | `/api/basket`, items, merge |
 
