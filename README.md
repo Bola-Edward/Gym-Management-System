@@ -2,7 +2,7 @@
 
 ## 📋 Project Overview
 
-Power Fitness is a complete gym management system built with ASP.NET Core MVC using **NTier Architecture** principles.
+Power Fitness is a complete gym management system built with ASP.NET Core MVC using **3-Layer Architecture** principles.
 
 **Dependency Flow:** PL → BLL → DAL
 - PL handles HTTP requests, MVC controllers, Razor views, authentication, and authorization.
@@ -31,7 +31,7 @@ Open `GymManagementSystem.PL/appsettings.json` and update the connection string:
 ```json
 {
   "ConnectionStrings": {
-    "DefaultConnection": "Server=YOUR_SERVER_NAME; Database=GymSystem; Trusted_Connection=True; TrustServerCertificate=True;"
+    "DefaultConnection": "Server=YOUR_SERVER_NAME; Database=YOUR_DATABASE_NAME; Trusted_Connection=True; TrustServerCertificate=True;"
   }
 }
 ```
@@ -65,11 +65,11 @@ Update-Database
 
 > ⚠️ **Important**: The database is seeded automatically when you run the application for the first time.
 
-The seeder is configured in `GymManagementSystem.DAL/Seeder/` and registered in `Program.cs`. It will run at application startup and populate:
+The seeders is configured in `GymManagementSystem.DAL/Seeder/` and registered in `Program.cs`. It will run at application startup and populate:
 - **Identity Roles and Accounts**
 - **Categories** (Yoga, Boxing, CrossFit, Cardio, Strength Training)
 - **Plans** (Basic, Standard, Premium, Annual)
-- `Plan and category data can be loaded from JSON seed files.`
+Plan and category data can be loaded from JSON seed files.
 
 ### Step 6: Run the Application
 
@@ -100,5 +100,5 @@ GymManagementSystem/
     ├── Interceptors/                # EF Core interceptors
     ├── Migrations/                  # Database migrations
     ├── Repositories/                # Data access implementations
-    └── Seeders/                     # Database seeders
+    └── Seeder/                     # Database seeders
 ```
