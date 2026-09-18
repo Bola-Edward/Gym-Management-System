@@ -100,5 +100,5 @@ GymManagementSystem/
     ├── Interceptors/                # EF Core interceptors
     ├── Migrations/                  # Database migrations
     ├── Repositories/                # Data access implementations
-    └── Seeder/                     # Database seeders
+    └── Seeder/                      # Database seeders
 ```
